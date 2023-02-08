@@ -1,0 +1,179 @@
+﻿
+<%-- TEXTBOX --%>
+<asp:TextBox runat="server" CssClass="TextBox" />
+<asp:TextBox runat="server" CssClass="TextBox1" SkinID="TextBox1" />
+<asp:TextBox runat="server" CssClass="TextBoxData" SkinID="Data" Height="20px"/>
+<asp:TextBox runat="server" CssClass="TextBox" SkinID="Pedido"  Width="80px" Height="15px"/>
+<asp:TextBox runat="server" CssClass="TextBox" SkinID="Size70" Width="70px" Height="15px"/>
+<asp:TextBox runat="server" CssClass="TextBox" SkinID="Filtro" Width="150px" Height="15px" />
+<asp:TextBox runat="server" CssClass="TextBox"   SkinID="SmallFilter" Width="100px" Height="15px" />
+<asp:TextBox runat="server" CssClass="TextBox_Currency" SkinID="CurrencyDefault" />
+<asp:TextBox runat="server" CssClass="TextBox_Currency" SkinID="Currency50" Width="50px" Height="15px"/>
+<asp:TextBox runat="server" CssClass="TextBox_Currency" SkinID="Currency70" Width="70px" Height="15px"/>
+<asp:TextBox runat="server" CssClass="TextBox_Currency" SkinID="Currency80" Width="80px" Height="15px"/>
+<asp:TextBox runat="server" CssClass="TextBox_Currency" SkinID="Currency150" Width="150px" Height="15px" />
+<asp:TextBox runat="server" CssClass="TextBox_Currency" SkinID="Currency100" Width="100px" Height="15px" />
+<asp:TextBox runat="server" CssClass="txtNormal" SkinID="txtNormal" Height="15px" />
+<asp:TextBox runat="server" CssClass="form-control" SkinID="txtUserName" Width="470px"  />
+<asp:TextBox runat="server" CssClass="form-control" SkinID="txtBootstrap"  Height="12px" />
+<asp:TextBox runat="server" CssClass="form-control" SkinID="txtBootstrap2"  Height="25px" />
+<asp:TextBox runat="server" CssClass="form-control form-control-sm" SkinID="txtBootstrap3"    />
+<asp:TextBox runat="server" CssClass="form-control" SkinID="txtBootstrap4"    />
+<asp:TextBox runat="server" CssClass="form-control" SkinID="txtBootstrap5"   Width="150px"  />
+<%-- LABEL --%>
+<asp:Label runat="server" CssClass="Label" />
+<asp:Label runat="server" CssClass="Label" SkinID="LabelForm" Width="150px" />
+<asp:Label runat="server" CssClass="LabelResposta" SkinID="LabelResposta" />
+<asp:Label runat="server" CssClass="LabelPedido" SkinID="LabelFormPedido"  Width="300px" />
+<asp:Label runat="server" SkinID="lblLastShowHide" CssClass="LabelShowHideMenu" />
+<asp:Label runat="server" CssClass="lblResposta" SkinID="lblResposta" />
+<asp:Label runat="server" CssClass="alert-danger" SkinID="lblAlerta" />
+<asp:Label runat="server" CssClass="control-label col-md-1" SkinID="lblBoot" />
+<asp:Label runat="server" CssClass="control-label" SkinID="lblBoot2" />
+
+<asp:Label runat="server" CssClass="alert-primary" SkinID="lblAlertPrimary" />
+<asp:Label runat="server" CssClass="alert-success" SkinID="lblAlertSuccess" />
+<asp:Label runat="server" CssClass="alert-danger" SkinID="lblAlertDanger" />
+<asp:Label runat="server" CssClass="alert-warning" SkinID="lblAlertWarning" />
+<asp:Label runat="server" CssClass="alert-info" SkinID="lblAlertInfo" />
+<%-- ********************** BUTTON ************************************************************** --%>
+
+<asp:Button runat="server" CssClass="Button" />
+<asp:Button runat="server" CssClass="Button btnClean" SkinID="ButtonClean" />
+<asp:Button runat="server" CssClass="Button btnNew" SkinID="ButtonNew" />
+<asp:Button runat="server" CssClass="Button btnCancel" SkinID="ButtonCancel" />
+<asp:Button runat="server" CssClass="Button btnExcel" SkinID="ButtonExcel" />
+<asp:Button runat="server" CssClass="Button btnSave" SkinID="ButtonSave" />
+<asp:Button runat="server" CssClass="Button btnExcluir" SkinID="ButtonExcluir" />
+<asp:Button runat="server" CssClass="Button btnFind" SkinID="ButtonFind" />
+<asp:Button runat="server" CssClass="Button btnVoltar" SkinID="ButtonVoltar" />
+<asp:Button runat="server" CssClass="Button btnOk" SkinID="ButtonOk" />
+<asp:Button runat="server" CssClass="btn btn-default" SkinID="BtnDefault" />
+<asp:Button runat="server" CssClass="btn btn-primary" SkinID="BtnPrimary" />
+<asp:Button runat="server" CssClass="btn btn-success btn-md btn-block-login" SkinID="BtnSuccessLogin" />
+<asp:Button runat="server" CssClass="btn btn-success" SkinID="BtnSuccess" />
+<asp:Button runat="server" CssClass="btn btn-info"    SkinID="BtnInfo" />
+<asp:Button runat="server" CssClass="btn btn-warning" SkinID="BtnWarning" />
+<asp:Button runat="server" CssClass="btn btn-danger"  SkinID="BtnDanger" />
+<asp:Button runat="server" CssClass="btn btn-link"    SkinID="BtnLink" />
+
+<asp:Button runat="server" CssClass="btn btn-sm btn-default" SkinID="BtnDefault-sm" />
+<asp:Button runat="server" CssClass="btn btn-sm btn-primary" SkinID="BtnPrimary-sm" />
+<asp:Button runat="server" CssClass="btn btn-sm btn-success" SkinID="BtnSuccess-sm" />
+<asp:Button runat="server" CssClass="btn btn-sm btn-info" SkinID="BtnInfo-sm" />
+<asp:Button runat="server" CssClass="btn btn-sm btn-warning" SkinID="BtnWarning-sm" />
+<asp:Button runat="server" CssClass="btn btn-sm btn-danger" SkinID="BtnDanger-sm" />
+
+<asp:Button runat="server" CssClass="btn btn-xs btn-default" SkinID="BtnDefault-xs" />
+<asp:Button runat="server" CssClass="btn btn-xs btn-primary" SkinID="BtnPrimary-xs" />
+<asp:Button runat="server" CssClass="btn btn-xs btn-success" SkinID="BtnSuccess-xs" />
+<asp:Button runat="server" CssClass="btn btn-xs btn-info" SkinID="BtnInfo-xs" />
+<asp:Button runat="server" CssClass="btn btn-xs btn-warning" SkinID="BtnWarning-xs" />
+<asp:Button runat="server" CssClass="btn btn-xs btn-danger" SkinID="BtnDanger-xs" />
+
+<%-- CENTER --%>
+<asp:Button runat="server" CssClass="ButtonCenterClear" SkinID="ButtonCenter" />
+<asp:Button runat="server" CssClass="ButtonCenter btnClean" SkinID="ButtonCenterClean" />
+<asp:Button runat="server" CssClass="ButtonCenter btnNew" SkinID="ButtonCenterNew" />
+<asp:Button runat="server" CssClass="ButtonCenter btnCancel" SkinID="ButtonCenterCancel" />
+<asp:Button runat="server" CssClass="ButtonCenter btnExcel" SkinID="ButtonCenterExcel" />
+<asp:Button runat="server" CssClass="ButtonCenter btnSave" SkinID="ButtonCenterSave" />
+<asp:Button runat="server" CssClass="ButtonCenter btnExcluir" SkinID="ButtonCenterExcluir" />
+<asp:Button runat="server" CssClass="ButtonCenter btnFind" SkinID="ButtonCenterFind" />
+<asp:Button runat="server" CssClass="ButtonCenter btnVoltar" SkinID="ButtonCenterVoltar" />
+<asp:Button runat="server" CssClass="ButtonCenter btnDisagree" SkinID="ButtonCenterDisagree" />
+
+<%-- LEFT --%>
+<asp:Button runat="server" CssClass="ButtonLeftClear" SkinID="ButtonLeft" />
+<asp:Button runat="server" CssClass="ButtonLeft btnFind" SkinID="ButtonLeftFind" />
+<asp:Button runat="server" CssClass="ButtonLeft btnSave" SkinID="ButtonLeftSave" />
+<asp:Button runat="server" CssClass="ButtonLeft btnClean" SkinID="ButtonLeftClean" />
+<asp:Button runat="server" CssClass="ButtonLeft btnNew" SkinID="ButtonLeftNew" />
+<asp:Button runat="server" CssClass="ButtonLeft btnCancel" SkinID="ButtonLeftCancel" />
+<asp:Button runat="server" CssClass="ButtonLeft btnExcel" SkinID="ButtonLeftExcel" />
+<asp:Button runat="server" CssClass="ButtonLeft btnExcluir" SkinID="ButtonLeftExcluir" />
+<asp:Button runat="server" CssClass="ButtonLeft btnVoltar" SkinID="ButtonLeftVoltar" />
+<asp:Button runat="server" CssClass="ButtonLeft btnOk" SkinID="ButtonLeftOk" />
+
+<%-- RIGHT --%>
+<asp:Button runat="server" CssClass="ButtonRightClear" SkinID="ButtonRight" />
+<asp:Button runat="server" CssClass="ButtonRight btnClean" SkinID="ButtonRightClean" />
+<asp:Button runat="server" CssClass="ButtonRight btnNew" SkinID="ButtonRightNew" />
+<asp:Button runat="server" CssClass="ButtonRight btnCancel" SkinID="ButtonRightCancel" />
+<asp:Button runat="server" CssClass="ButtonRight btnExcel" SkinID="ButtonRightExcel" />
+<asp:Button runat="server" CssClass="ButtonRight btnSave" SkinID="ButtonRightSave" />
+<asp:Button runat="server" CssClass="ButtonRight btnExcluir" SkinID="ButtonRightExcluir" />
+<asp:Button runat="server" CssClass="ButtonRight btnFind" SkinID="ButtonRightFind" />
+<asp:Button runat="server" CssClass="ButtonRight btnVoltar" SkinID="ButtonRightVoltar" />
+<asp:Button runat="server" CssClass="ButtonRight btnNaoOk" SkinID="ButtonRightNaoOk" />
+
+<%-- ********************************************************************************************* --%>
+
+<%-- LINKBUTTON --%>
+<asp:LinkButton runat="server" CssClass="LinkButton" />
+<asp:LinkButton runat="server" CssClass="LinkButtonLogin" SkinID="LinkButtonLogin" />
+<asp:LinkButton runat="server" CssClass="btn btn-success btn-sm LinkButton" SkinID="LinkButtonSuccess" />  
+<asp:LinkButton runat="server" CssClass="btn btn-info  btn-sm LinkButton"    SkinID="LinkButtonInfo" />
+<asp:LinkButton runat="server" CssClass="btn btn-warning  btn-sm LinkButton" SkinID="LinkButtonWarning" />
+<asp:LinkButton runat="server" CssClass="btn btn-danger  btn-sm LinkButton"  SkinID="LinkButtonDanger" />
+<asp:LinkButton runat="server" CssClass="btn btn-link  btn-sm LinkButton"    SkinID="LinkButtonLink" />
+<asp:LinkButton runat="server" CssClass="btn btn-success LinkButton" SkinID="LinkButtonSuccessMd" />  
+<asp:LinkButton runat="server" CssClass="btn btn-danger LinkButton" SkinID="LinkButtonDangerMd" /> 
+<asp:LinkButton runat="server" CssClass="small-box-footer" SkinID="SmallBoxFooter" /> 
+ 
+<%-- DROPDOWNLIST --%>
+<asp:DropDownList runat="server" CssClass="DropDownList" Height="20px" />
+<asp:DropDownList runat="server" CssClass="DropDownList" SkinID="DropFiltro"  Width="150px" Height="20px" />
+<asp:DropDownList runat="server" CssClass="DropDownList" SkinID="DropSmallFilter"  Width="100px" Height="20px" />
+<asp:DropDownList runat="server" CssClass="DropDownList" SkinID="DropFilterCustom"  Width="180px" Height="20px" />
+
+<asp:DropDownList runat="server" CssClass="form-control" SkinID="ddlBootstrap"  Height="30px" />
+<asp:DropDownList runat="server" CssClass="form-select" SkinID="ddlBootstrap1"   />
+
+<asp:DropDownList runat="server" CssClass="form-control" SkinID="ddlBootstrap2"  Height="20px" />
+<asp:DropDownList runat="server" CssClass="js-example-basic-single form-control" SkinID="ddlBootstrapSelect"   />
+<%-- GRIDVIEW --%>
+<asp:GridView runat="server" PageSize="10" AutoGenerateColumns="false" AllowPaging="true" AllowSorting="false"  CssClass="GridView" />
+<%-- GRIDVIEW para tela de consulta de estoque - CONSOLIDADO --%>
+<asp:GridView runat="server" PageSize="5" AutoGenerateColumns="false" AllowPaging="true" AllowSorting="false"  CssClass="GridView" SkinID="gvConsolidadoEstoque" />
+<%-- GRIDVIEW estoque com paginação--%>
+<asp:GridView runat="server" PageSize="5" AutoGenerateColumns="false" AllowPaging="true" AllowSorting="false" CssClass="GridView"  SkinID="gvEstoquePaginado"/>
+<asp:GridView runat="server" PageSize="5" AutoGenerateColumns="false" AllowPaging="true" AllowSorting="false" CssClass="GridView"  SkinID="gvEstoquePaginadoDetalhado" />
+<asp:GridView runat="server" AutoGenerateColumns="false" AllowPaging="false" AllowSorting="false" CssClass="GridView"  SkinID="gvExport"/>
+
+<asp:GridView runat="server" PageSize="10" AutoGenerateColumns="false" AllowPaging="true" AllowSorting="false"  CssClass="table table table-striped table-bordered"  SkinID="GridViewTable"/>
+
+<asp:GridView runat="server" AutoGenerateColumns="false" AllowPaging="false" AllowSorting="false"  CssClass="table table table-striped table-bordered"  SkinID="GridViewTable_NoPages"/>
+
+<%-- CheckBoxList --%>
+<asp:CheckBoxList runat="server" CssClass="CheckBoxList_RadioButtonList" />
+
+<%-- CheckBox -- FOI UTILIZADO O SKINID, PELO FATO DE QUE QUANDO SE USA A CLASSE PARA TODOS OS CHECKBOXES,
+                 OS NAVEGADORES NÃO INTERPRETAM OS CHECKBOXES NAS GRIDVIEWS, IMPOSSIBILITANDO O USO DO SCRIPT DE MARCAR TODOS --%>
+<%-- <asp:CheckBox runat="server" CssClass="CheckBox" SkinID="CheckBox" /> --%>
+
+<%-- RadioButtonList --%>
+<asp:RadioButtonList runat="server" CssClass="CheckBoxList_RadioButtonList" />
+<asp:RadioButtonList runat="server" CssClass="tabStrip" SkinID="radioAbas"/>
+
+<%-- ImageButton --%>
+<asp:ImageButton runat="server" CssClass="ImageButtonGrid" SkinID="ImgGrid" />
+
+<asp:ImageButton runat="server" CssClass="close" SkinID="ImgClose" />
+<asp:ImageButton runat="server" CssClass="imgList" SkinID="ImgList" />
+<%-- FileUpload --%>
+<asp:FileUpload runat="server" CssClass="FileUpload" />
+
+<asp:ListBox runat="server" CssClass="ListBox" />
+
+<%-- Panel pop up --%>
+<asp:Panel runat="server" CssClass="Panel" SkinID="PnlPopUp" />
+<asp:Panel runat="server" CssClass="Panel_Nv3" SkinID="PnlPopUpNv1" />
+<asp:Panel runat="server" CssClass="PanelMenu" SkinID="PnlMenu" />
+ 
+
+<%-- Panels ALERT --%>
+<asp:Panel runat="server" CssClass="alert-warning" SkinID="pnlAlertWarning" />
+<asp:Panel runat="server" CssClass="alert-danger" SkinID="pnlAlertDanger" />
+<asp:Panel runat="server" CssClass="alert-success" SkinID="pnlAlertSuccess" />
+<asp:Panel runat="server" CssClass="alert-info" SkinID="pnlAlertInfo" />

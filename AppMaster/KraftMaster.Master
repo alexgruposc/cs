@@ -1,0 +1,223 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="KraftMaster.master.cs"
+    Inherits="KRAFTSALES.AppMaster.KraftMaster" %>
+
+<%@ Register Assembly="obout_TextMenu" Namespace="OboutInc.TextMenu" TagPrefix="tm" %>
+
+<%--<%@ Register Assembly="EO.Web" Namespace="EO.Web" TagPrefix="eo" %>--%>
+
+<%-- CONTROLES  --%>
+<%@ Register Src="~/AppControles/CtlAlert.ascx" TagName="CtlAlert" TagPrefix="CtlAlt" %>
+<%@ Register Src="~/AppControles/CtlOption.ascx" TagName="ControlOption" TagPrefix="CtlOption" %>
+<%@ Register Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" TagPrefix="ucc" %>
+<%@ Register Src="~/AppControles/Mensagem.ascx" TagPrefix="msgBox" TagName="Mensagem" %>
+
+<%-- *********  --%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script language="javascript" type="text/javascript" src="../../Scripts/KraftSalesScripts.js?v=5"></script>
+ <link rel="apple-touch-icon" sizes="57x57" href="../Imagens/Icon/apple-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="60x60" href="../Imagens/Icon/apple-icon-60x60.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="../Imagens/Icon/apple-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="../Imagens/Icon/apple-icon-76x76.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="../Imagens/Icon/apple-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="../Imagens/Icon/apple-icon-120x120.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="../Imagens/Icon/apple-icon-144x144.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="../Imagens/Icon/apple-icon-152x152.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="../Imagens/Icon/apple-icon-180x180.png"/>
+<link rel="icon" type="image/png" sizes="192x192"  href="../Imagens/Icon/android-icon-192x192.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="../Imagens/Icon/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="96x96" href="../Imagens/Icon/favicon-96x96.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="../Imagens/Icon/favicon-16x16.png"/>
+
+<meta name="msapplication-TileColor" content="#ffffff"/>
+<meta name="msapplication-TileImage" content="../Imagens/Icon/ms-icon-144x144.png"/>
+<meta name="theme-color" content="#ffffff"/>
+
+    <link href="../Styles/Style.css?v=2" rel="Stylesheet" type="text/css" />
+        <!-- Bootstrap core JavaScript -->
+    <script src="../../Scripts/jQuery-2.1.4.min.js?v=5" type="text/javascript"></script>
+    <script src="../../Scripts/bootstrap.js" type="text/javascript"></script>
+    <script src="../../Scripts/tooltip.js" type="text/javascript"></script>
+    <script src="../../Scripts/popover.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+ <%--          
+    <link rel="Stylesheet" type="text/css" href="../Content/bootstrap.min.css" />
+    <script src="<%= ResolveUrl("../../Scripts/jQuery-2.1.4.min.js") %>" type="text/javascript"></script>
+    <script src="<%= ResolveUrl("../../Scripts/bootstrap.js") %>" type="text/javascript"></script>
+        
+    <script src="<%= ResolveUrl("../../Scripts/tooltip.js") %>" type="text/javascript"></script>
+    <script src="<%= ResolveUrl("../../Scripts/popover.js") %>" type="text/javascript"></script>--%>--%>
+
+
+
+
+    <script language="javascript" type="text/javascript">
+
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        }
+
+        function EnableStyleInFather(obj, hbc, hfc) {
+            document.getElementById(obj).style.backgroundColor = document.getElementById(hbc).value;
+            document.getElementById(obj).style.color = document.getElementById(hfc).value;
+            document.getElementById(obj).style.borderColor = document.getElementById(hbc).value;
+            document.getElementById(obj).style.margin = "0 1px 0 0";
+            document.getElementById(obj).style.width = "110px";
+            document.getElementById(obj).style.borderTop = "2px solid " + document.getElementById(hbc).value + "";
+        }
+
+        function DisableStyleInFather(obj, hf, hbc, hfc) {
+            if (document.getElementById(hf).value != obj) {
+                document.getElementById(obj).style.float = "left";
+                document.getElementById(obj).style.display = "block";
+                document.getElementById(obj).style.fontWeight = "bold";
+                document.getElementById(obj).style.color = document.getElementById(hfc).value;
+                document.getElementById(obj).style.textDecoration = "none";
+                document.getElementById(obj).style.backgroundColor = document.getElementById(hbc).value;
+                document.getElementById(obj).style.margin = "1px 1px 0 0";
+                document.getElementById(obj).style.padding = "5px 10px";
+                //document.getElementById(obj).style.borderTop = "1px solid white";
+                document.getElementById(obj).style.border = "1px solid " + document.getElementById(hfc).value + "";
+            }
+        }
+
+        function fnShow(lstID) {
+            document.getElementById(lstID).style.display = "block";
+        }
+
+        function fnHide(lstID) {
+            document.getElementById(lstID).style.display = "none";
+        }
+
+    </script>
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="smMaster" runat="server" AllowCustomErrorsRedirect="true"
+            AsyncPostBackTimeout="600" ScriptMode="Debug" EnableScriptGlobalization="true"
+            EnableScriptLocalization="true" EnablePageMethods="true" EnablePartialRendering="true">                    
+        </asp:ScriptManager>
+
+        <%-- CONTROLES --%>
+        <CtlAlt:CtlAlert ID="CtlAlert" runat="server" />
+        <CtlOption:ControlOption ID="CtlOption" runat="server" />
+   <%--     <msgBox:Mensagem runat="server" ID="MensagemBox" />--%>
+
+
+        <%-- HEADER --%>
+        <div class="header-new" style="position: relative;">
+            <div class="Inner_header-new" style="height: 70px;">
+                <div class="Inner_Left">
+                    <asp:Image ID="imgHeader" runat="server" ImageAlign="AbsMiddle" Width="152px" Height="58px" />
+                </div>
+                <div class="Inner_Center">
+                    <asp:Label ID="lblHeader" runat="server" ForeColor="White" Font-Bold="true" Font-Size="XX-Large" />
+                </div>
+
+
+                <div class="Inner_Right">
+                    <div style="position: static; width: 380px; text-align: right;">
+                        <asp:Image ID="imgUsuario" runat="server" ImageAlign="Middle" Width="50px" Height="50px" />
+                        <asp:Label ID="lblNomeUsuario" runat="server" ForeColor="White" Font-Bold="true" />
+                        <asp:LinkButton ID="lbLogOnLogOff" runat="server" Font-Bold="true"
+                            ForeColor="White" OnClick="lbLogOnLogOff_Click" />
+                    </div>
+                    <div style="position: static; width: 380px; text-align: right;">
+                        <asp:Label ID="lblAcesso" runat="server" ForeColor="White" Font-Bold="true" Font-Size="Smaller" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%-- MENU --%>
+        <div id="dvMenu" class="menuhorizontal" runat="server">
+            <tm:TextMenu ID="TextMenu1" runat="server" StyleFileName="Style.css"
+                ColorBackground="#13213C" ColorBackgroundOver="#FBBA5F" ColorFontOver="Black" Font="11px Arial" SubMenuText="››" />
+        </div>
+
+        <%-- BODY --%>
+        <div style="width: 99%; height: 100%; margin-left: 0.5%; margin-top: 5px; margin-bottom: 80px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <%-- FOOTER --%>
+        <div class="footer">
+            <div class="Inner_footer-new">
+                <div class="Inner_Left">
+                    <asp:Label ID="lblFooterVersion" runat="server" ForeColor="White" Font-Bold="true" Visible="true" />
+                </div>
+                <div class="Inner_Center">
+                    <div style="display: table; width: 100%;">
+                        <div style="display: table-cell; width: 100%; vertical-align: middle; text-align: center;">
+                            <asp:Image ID="imgFooterLogo" runat="server" ImageAlign="AbsMiddle" Height="30px" />
+                            <asp:Label ID="lblFooterCopiryght" runat="server" ForeColor="White" Font-Bold="true" />
+                        </div>
+                    </div>
+                </div>
+                <div class="Inner_Right">
+                    <div class="logo-footer"></div>
+                    <div class="logo-footer-sar"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <asp:Panel ID="pnlWarnPermission" runat="server" DefaultButton="btnOk" Visible="false">
+            <div class="OpacityBackGround" style="z-index: 7;">
+            </div>
+            <div class="warn-permission">
+                <div class="alert_header">
+                    <div class="alert_header_message">
+                        <asp:Label ID="lblHeaderText" Text="<%$ Resources:Resource, lblControleDeAcesso %>" runat="server" ForeColor="White" />
+                    </div>
+                    <div class="alert_header_icon">
+                        <asp:ImageButton ID="ibClose" runat="server" ImageAlign="AbsMiddle" Visible="false"
+                            Width="30px" Height="30px"
+                            ImageUrl="~/Imagens/Fechar.png" />
+                    </div>
+                </div>
+                <div class="warning-permisssion-alert_body">
+                  <div style="width: 100%; height: 100%; display: table; margin-top: 0px;">
+                        <div style="width: 80%; height: 100%; display: table-cell; text-align: left; padding-top: 40px; padding-left: 30px">
+                            <div style="text-align: left; font-size: 12px;">
+                                <asp:Label ID="lblMessage" Text="<%$ Resources:Resource, lblControleDeAcessoMsg %>" runat="server" />
+                            </div>
+                        </div>
+                        <div id="dvAlertIcon" runat="server" style="width: 20%; height: 100%; display: table-cell; vertical-align: middle; text-align: center;">
+                            <asp:Image ID="imgAlert" runat="server" Height="50%" Width="60%" ImageAlign="AbsMiddle" ImageUrl="~/Imagens/exclamation.png" />
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="alert_bottom">
+                    <div class="alert_bottom_button">
+                        <asp:Button ID="btnOk" runat="server" AccessKey="O" SkinID="ButtonOk" Text="<%$ Resources:Resource, lblOk %>" ToolTip="<%$ Resources:Resource, lblOk %>" />
+                    </div>
+                </div>
+            </div>
+        </asp:Panel>
+
+
+
+        <%-- HIDDENFIELDS DE APOIO --%>
+        <%--<asp:HiddenField ID="hfMenu" runat="server" Value='<%= lbHome.ClientID %>' />
+    <asp:HiddenField ID="hfBackColor" runat="server" Value='<%$ AppSettings:MENU_BACKCOLOR %>' />
+    <asp:HiddenField ID="hfBackColorHover" runat="server" Value='<%$ AppSettings:MENU_BACKCOLORHOVER %>' />
+    <asp:HiddenField ID="hfForeColor" runat="server" Value='<%$ AppSettings:MENU_FORECOLOR %>' />
+    <asp:HiddenField ID="hfForeColorFather" runat="server" Value='<%$ AppSettings:MENU_FORECOLORFATHER %>' />--%>
+
+    
+        <%--<script src="../Scripts/bootstrap.min.js" type="text/javascript"></script>--%>
+       
+
+    </form>
+</body>
+</html>
